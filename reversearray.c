@@ -1,13 +1,12 @@
 #include <stdio.h>
-int main()
+main()
 {
-int n,c,d,a[100],b[100];
+int n,index,arr1[100],arr2[100];
 scanf("%d",&n);
-for(c=0;c<n;c++)
-scanf("%d",&a[c]);
-for(c=n-1,d=0;c>=0;c--,d++)
-b[d]=a[c];
-for(c=0;c<n;c++)
-printf("%d",b[c]);
-return 0;
+for(index=0;index<n;index++)
+  scanf("%d",&a[index]);
+for(index=0;index<n;index++)
+  arr2[index]=arr1[n-1-index];
+for(index=0;index<n;index++)
+  printf("%d",b[index]);
 }
